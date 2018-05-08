@@ -1,0 +1,31 @@
+WITH country_region AS (
+	SELECT c.country, 
+			case
+			WHEN c.country IN ('USA', 'Canada') THEN 'North America'
+			WHEN c.country IN ('Mexico','Argentina','Brazil','Venezuela') THEN 'Latin America'
+			ELSE 'Europe' END AS country_region
+	FROM Customers c
+	GROUP BY 1
+	ORDER BY 1 DESC),
+	
+	product_name AS (
+	SELECT p.productname product_name, p.unitprice unit_price, cat.categoryname category_name, od.orderid, od.quantity, c.country
+	FROM Categories cat
+	JOIN Products p
+	ON cat.categoryID = p.categoryID
+	JOIN OrderDetails od
+	ON p.productID = od.productID
+	JOIN Orders o
+	ON od.orderID = o.orderID
+	JOIN Customers c
+	ON o.customerID = c.customerID
+	GROUP BY 1,4
+	ORDER BY 5 DESC)
+
+SELECT product_name, category_name, quantity, country_region, product_name.country
+FROM country_region
+JOIN product_name
+ON country_region.country = product_name.country
+WHERE quantity >= 100 AND category_name IN ('Beverages','Dairy Products')
+GROUP BY 1,2,3,4,5
+ORDER BY 3 DESC

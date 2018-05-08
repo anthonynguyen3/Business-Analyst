@@ -1,0 +1,23 @@
+WITH country_count AS (
+	SELECT country, COUNT (*) country_count
+	FROM Customers
+	GROUP BY 1
+	ORDER BY 2 DESC),
+	
+	country_region AS (
+	SELECT Customers.country,
+		CASE
+		WHEN Orders.shipcountry IN ('USA', 'Canada') THEN 'North America'
+		WHEN Orders.shipcountry IN ('Mexico','Argentina','Brazil','Venezuela') THEN 'Latin America'
+		ELSE 'Europe' END AS country_region
+	FROM Customers
+	JOIN Orders
+	ON Customers.country = Orders.shipcountry
+	GROUP BY 1
+)
+SELECT country_count, country_region, country_count.country
+FROM country_count
+JOIN country_region
+ON country_count.country = country_region.country
+GROUP BY 3
+ORDER BY 1 DESC;
