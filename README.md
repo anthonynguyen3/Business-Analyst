@@ -5,7 +5,7 @@ This repository contains all the work for the [Udacity's Business Analyst Nanode
 **PROJECT LIST**
 
 + Problem solving with analytics using Alteryx software:
-    + Predict diamond prices [Project 1.1](https://github.com/anthonynguyen3/udacity_business_analyst/tree/master/project1.1)
+    + Predict diamond prices [Project 1.1](https://github.com/anthonynguyen3/Business-Analyst/tree/master/Project%201.1%20-%20Predicting%20Diamond%20Prices)
     + Predict catalog demand [Project 1.2](https://github.com/anthonynguyen3/udacity_business_analyst/tree/master/project1.2)
 + Generate an analytical dataset using Alteryx [Project 2](https://github.com/anthonynguyen3/udacity_business_analyst/tree/master/project2)
     + Data cleanup 
