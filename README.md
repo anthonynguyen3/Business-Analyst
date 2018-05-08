@@ -4,7 +4,7 @@ This repository contains all the work dedicated for the [Udacity's Business Anal
 
 **PROJECT LIST**
 
-+ Problem solving using Alteryx software:
++ Problem solving with analytics using Alteryx software:
     + Predict diamond prices [Project 1.1](https://github.com/anthonynguyen3/udacity_business_analyst/tree/master/project1.1)
     + Predict catalog demand [Project 1.2](https://github.com/anthonynguyen3/udacity_business_analyst/tree/master/project1.2)
 + Generate an analytical dataset using Alteryx [Project 2](https://github.com/anthonynguyen3/udacity_business_analyst/tree/master/project2)
