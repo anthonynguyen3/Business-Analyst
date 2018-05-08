@@ -9,7 +9,7 @@ This repository contains all the work for the [Udacity's Business Analyst Nanode
     + Predict catalog demand [Project 1.2](https://github.com/anthonynguyen3/Business-Analyst/tree/master/Project%201.2%20-%20Predicting%20Catalog%20Demand)
 + Generate an analytical dataset using Alteryx
     + Data merging, cleansing, & identify data outliers [Project 2.1](https://github.com/anthonynguyen3/Business-Analyst/tree/master/Project%202.1%20-%20Create%20an%20Analytical%20Dataset)
-    + SQL database for creating a report [Project 2.2](https://github.com/anthonynguyen3/udacity_business_analyst/tree/master/project2)
+    + SQL database for creating a report [Project 2.2](https://github.com/anthonynguyen3/Business-Analyst/tree/master/Project%202.2%20-%20Create%20Reports%20from%20a%20Database)
 + Data visualization in Tableau: Movie Trends [Project 3](https://github.com/anthonynguyen3/udacity_business_analyst/tree/master/project3) 
 + Classification models in predicting default risk: [Project 4](https://github.com/anthonynguyen3/udacity_business_analyst/tree/master/project4)
     + Logistic regression 
