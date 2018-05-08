@@ -1,0 +1,1623 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10500.18.0305.1200                               -->
+<workbook original-version='10.5' source-build='10.5.2 (10500.18.0305.1200)' source-platform='win' version='10.5' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <repository-location id='Q3Dashboard-Nguyen_ATableauProject3Submission' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='movies' inline='true' name='federated.13capog1j9lndx15mygvg1qxl4ma' version='10.5'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='movies' name='textscan.0osjqo40ictr7c15cpbt818y54yk'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/killaTOEknee/Desktop/Udacity BA Nanodegree/3. Data Visualization/Data Visualizations in Tableau/Project 3 - Visualize Movie Data/movies.csv' dataRefreshTime='' directory='C:/Users/killaTOEknee/Desktop/Udacity BA Nanodegree/3. Data Visualization/Data Visualizations in Tableau/Project 3 - Visualize Movie Data' filename='C:/Users/KILLAT~1/AppData/Local/Temp/TableauTemp/1wpgo3a02gxnd610lrwps1usrn29/movies.csv.xlsx' interpretationMode='8' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0osjqo40ictr7c15cpbt818y54yk' name='movies.csv' table='[movies#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:AD10001:no:A1:AD10001:1' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='string' name='imdb_id' ordinal='1' />
+            <column datatype='real' name='popularity' ordinal='2' />
+            <column datatype='integer' name='budget' ordinal='3' />
+            <column datatype='integer' name='revenue' ordinal='4' />
+            <column datatype='integer' name='profit' ordinal='5' />
+            <column datatype='string' name='original_title' ordinal='6' />
+            <column datatype='string' name='cast' ordinal='7' />
+            <column datatype='string' name='homepage' ordinal='8' />
+            <column datatype='string' name='director' ordinal='9' />
+            <column datatype='string' name='tagline' ordinal='10' />
+            <column datatype='string' name='keywords' ordinal='11' />
+            <column datatype='string' name='based_on_novel' ordinal='12' />
+            <column datatype='string' name='overview' ordinal='13' />
+            <column datatype='integer' name='runtime' ordinal='14' />
+            <column datatype='string' name='genres' ordinal='15' />
+            <column datatype='string' name='genres1' ordinal='16' />
+            <column datatype='string' name='genres2' ordinal='17' />
+            <column datatype='string' name='genres3' ordinal='18' />
+            <column datatype='string' name='genres4' ordinal='19' />
+            <column datatype='string' name='genres5' ordinal='20' />
+            <column datatype='string' name='production_companies' ordinal='21' />
+            <column datatype='string' name='universal_paramount' ordinal='22' />
+            <column datatype='date' name='release_date' ordinal='23' />
+            <column datatype='integer' name='vote_count' ordinal='24' />
+            <column datatype='real' name='vote_average' ordinal='25' />
+            <column datatype='integer' name='release_year' ordinal='26' />
+            <column datatype='real' name='budget_adj' ordinal='27' />
+            <column datatype='real' name='revenue_adj' ordinal='28' />
+            <column datatype='real' name='profit_adj' ordinal='29' />
+          </columns>
+        </relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>imdb_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[imdb_id]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>imdb_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>popularity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[popularity]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>popularity</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>budget</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[budget]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>budget</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[revenue]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>revenue</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>profit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[profit]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>profit</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>original_title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[original_title]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>original_title</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cast</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[cast]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>cast</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>homepage</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[homepage]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>homepage</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>director</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[director]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>director</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tagline</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[tagline]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>tagline</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>keywords</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[keywords]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>keywords</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>based_on_novel</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[based_on_novel]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>based_on_novel</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>overview</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[overview]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>overview</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>runtime</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[runtime]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>runtime</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genres</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[genres]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>genres</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genres1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[genres1]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>genres1</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genres2</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[genres2]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>genres2</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genres3</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[genres3]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>genres3</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genres4</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[genres4]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>genres4</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genres5</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[genres5]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>genres5</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>production_companies</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[production_companies]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>production_companies</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>universal_paramount</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[universal_paramount]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>universal_paramount</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[release_date]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>release_date</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vote_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[vote_count]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>vote_count</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vote_average</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[vote_average]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>vote_average</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[release_year]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>release_year</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>budget_adj</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[budget_adj]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>budget_adj</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue_adj</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[revenue_adj]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>revenue_adj</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>profit_adj</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[profit_adj]</local-name>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias>profit_adj</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[movies.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AD10001:no:A1:AD10001:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>130007</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.13capog1j9lndx15mygvg1qxl4ma].[avg:popularity:qk]&quot;' value='Avgerage Popularity' />
+          <alias key='&quot;[federated.13capog1j9lndx15mygvg1qxl4ma].[avg:profit_adj:qk]&quot;' value='Avgerage Profit' />
+          <alias key='&quot;[federated.13capog1j9lndx15mygvg1qxl4ma].[avg:revenue_adj:qk]&quot;' value='Avgerage Revenue' />
+          <alias key='&quot;[federated.13capog1j9lndx15mygvg1qxl4ma].[avg:vote_average:qk]&quot;' value='Avgerage Vote Average' />
+        </aliases>
+      </column>
+      <column caption='Profit or Neg Profit' datatype='string' name='[Calculation_445856410722172928]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IF sum([profit_adj]) &gt; 0&#13;&#10;THEN &quot;Profit&quot;&#13;&#10;ELSE &quot;Negative Profit&quot;&#13;&#10;END' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Based On Novel' datatype='string' name='[based_on_novel]' role='dimension' type='nominal' />
+      <column caption='Budget' datatype='integer' name='[budget]' role='measure' type='quantitative' />
+      <column caption='Budget Adj' datatype='real' name='[budget_adj]' role='measure' type='quantitative' />
+      <column caption='Cast' datatype='string' name='[cast]' role='dimension' type='nominal' />
+      <column caption='Director' datatype='string' name='[director]' role='dimension' type='nominal' />
+      <column caption='Primary Genre' datatype='string' name='[genres1]' role='dimension' type='nominal' />
+      <column caption='Secondary Genre' datatype='string' name='[genres2]' role='dimension' type='nominal' />
+      <column caption='Third Genre' datatype='string' name='[genres3]' role='dimension' type='nominal' />
+      <column caption='Fourth Genre' datatype='string' name='[genres4]' role='dimension' type='nominal' />
+      <column caption='Fifth Genre' datatype='string' name='[genres5]' role='dimension' type='nominal' />
+      <column caption='Genres' datatype='string' name='[genres]' role='dimension' type='nominal' />
+      <column caption='Homepage' datatype='string' name='[homepage]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Imdb Id' datatype='string' name='[imdb_id]' role='dimension' type='nominal' />
+      <column caption='Keywords' datatype='string' name='[keywords]' role='dimension' type='nominal' />
+      <column caption='Original Title' datatype='string' name='[original_title]' role='dimension' type='nominal' />
+      <column caption='Overview' datatype='string' name='[overview]' role='dimension' type='nominal' />
+      <column caption='Popularity' datatype='real' name='[popularity]' role='measure' type='quantitative' />
+      <column caption='Production Companies' datatype='string' name='[production_companies]' role='dimension' type='nominal' />
+      <column caption='Profit' datatype='integer' name='[profit]' role='measure' type='quantitative' />
+      <column caption='Profit Adj' datatype='real' name='[profit_adj]' role='measure' type='quantitative' />
+      <column caption='Release Date' datatype='date' name='[release_date]' role='dimension' type='ordinal' />
+      <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+      <column caption='Revenue' datatype='integer' name='[revenue]' role='measure' type='quantitative' />
+      <column caption='Revenue Adj' datatype='real' name='[revenue_adj]' role='measure' type='quantitative' />
+      <column caption='Runtime' datatype='integer' name='[runtime]' role='measure' type='quantitative' />
+      <column caption='Tagline' datatype='string' name='[tagline]' role='dimension' type='nominal' />
+      <column caption='Universal Paramount' datatype='string' name='[universal_paramount]' role='dimension' type='nominal' />
+      <column caption='Vote Average' datatype='real' name='[vote_average]' role='measure' type='quantitative' />
+      <column caption='Vote Count' datatype='integer' name='[vote_count]' role='measure' type='quantitative' />
+      <column-instance column='[budget]' derivation='Avg' name='[avg:budget:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[popularity]' derivation='Avg' name='[avg:popularity:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[profit_adj]' derivation='Avg' name='[avg:profit_adj:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[revenue_adj]' derivation='Avg' name='[avg:revenue_adj:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[vote_average]' derivation='Avg' name='[avg:vote_average:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[based_on_novel]' derivation='None' name='[none:based_on_novel:nk]' pivot='key' type='nominal' />
+      <column-instance column='[budget]' derivation='Sum' name='[sum:budget:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[popularity]' derivation='Sum' name='[sum:popularity:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[vote_average]' derivation='Sum' name='[sum:vote_average:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[vote_count]' derivation='Sum' name='[sum:vote_count:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_445856410722172928]' derivation='User' name='[usr:Calculation_445856410722172928:nk]' pivot='key' type='nominal' />
+      <drill-paths>
+        <drill-path name='Based On Novel, Original Title'>
+          <field>[based_on_novel]</field>
+          <field>[original_title]</field>
+        </drill-path>
+        <drill-path name='Genre Hierarchy'>
+          <field>[genres1]</field>
+          <field>[genres2]</field>
+          <field>[genres3]</field>
+          <field>[genres4]</field>
+          <field>[genres5]</field>
+        </drill-path>
+      </drill-paths>
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/killaTOEknee/Desktop/Udacity BA Nanodegree/3. Data Visualization/Data Visualizations in Tableau/Project 3 - Visualize Movie Data/Nguyen.A - Project 3 Visualize Movie Data Tableau Workbooks/movies.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/26/2018 09:46:33 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='10843' timestamp-start='2018-03-26 21:46:33.291' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>movies.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10843</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>imdb_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[imdb_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>imdb_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>movies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10843</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>popularity</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[popularity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>popularity</remote-alias>
+              <ordinal>2</ordinal>
+              <family>movies.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10843</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>budget</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[budget]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>budget</remote-alias>
+              <ordinal>3</ordinal>
+              <family>movies.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>116</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>revenue</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>revenue</remote-alias>
+              <ordinal>4</ordinal>
+              <family>movies.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>345</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>profit</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[profit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>profit</remote-alias>
+              <ordinal>5</ordinal>
+              <family>movies.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>439</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>original_title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[original_title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>original_title</remote-alias>
+              <ordinal>6</ordinal>
+              <family>movies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10843</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cast</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[cast]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cast</remote-alias>
+              <ordinal>7</ordinal>
+              <family>movies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10843</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>homepage</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[homepage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>homepage</remote-alias>
+              <ordinal>8</ordinal>
+              <family>movies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>200</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>director</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[director]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>director</remote-alias>
+              <ordinal>9</ordinal>
+              <family>movies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2920</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tagline</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tagline]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tagline</remote-alias>
+              <ordinal>10</ordinal>
+              <family>movies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1076</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>keywords</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[keywords]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>keywords</remote-alias>
+              <ordinal>11</ordinal>
+              <family>movies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1627</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>based_on_novel</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[based_on_novel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>based_on_novel</remote-alias>
+              <ordinal>12</ordinal>
+              <family>movies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>overview</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[overview]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>overview</remote-alias>
+              <ordinal>13</ordinal>
+              <family>movies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10843</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>runtime</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[runtime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>runtime</remote-alias>
+              <ordinal>14</ordinal>
+              <family>movies.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>111</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genres</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genres]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genres</remote-alias>
+              <ordinal>15</ordinal>
+              <family>movies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>389</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genres1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genres1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genres1</remote-alias>
+              <ordinal>16</ordinal>
+              <family>movies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genres2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genres2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genres2</remote-alias>
+              <ordinal>17</ordinal>
+              <family>movies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genres3</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genres3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genres3</remote-alias>
+              <ordinal>18</ordinal>
+              <family>movies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genres4</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genres4]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genres4</remote-alias>
+              <ordinal>19</ordinal>
+              <family>movies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genres5</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genres5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genres5</remote-alias>
+              <ordinal>20</ordinal>
+              <family>movies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>production_companies</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[production_companies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>production_companies</remote-alias>
+              <ordinal>21</ordinal>
+              <family>movies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1470</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>universal_paramount</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[universal_paramount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>universal_paramount</remote-alias>
+              <ordinal>22</ordinal>
+              <family>movies.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>release_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[release_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>release_date</remote-alias>
+              <ordinal>23</ordinal>
+              <family>movies.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>4874</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>vote_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[vote_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>vote_count</remote-alias>
+              <ordinal>24</ordinal>
+              <family>movies.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>277</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>vote_average</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[vote_average]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>vote_average</remote-alias>
+              <ordinal>25</ordinal>
+              <family>movies.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>55</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>release_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[release_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>release_year</remote-alias>
+              <ordinal>26</ordinal>
+              <family>movies.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>52</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>budget_adj</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[budget_adj]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>budget_adj</remote-alias>
+              <ordinal>27</ordinal>
+              <family>movies.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>321</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>revenue_adj</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[revenue_adj]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>revenue_adj</remote-alias>
+              <ordinal>28</ordinal>
+              <family>movies.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>346</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>profit_adj</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[profit_adj]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>profit_adj</remote-alias>
+              <ordinal>29</ordinal>
+              <family>movies.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>504</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.564315' measure-ordering='alphabetic' measure-percentage='0.435685' show-structure='false' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:based_on_novel:nk]&#10;[:Measure Names]' type='palette'>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;no&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;yes&quot;</bucket>
+            </map-pri>
+          </encoding>
+          <encoding attr='shape' field='[none:based_on_novel:nk]' type='shape'>
+            <map to='circle'>
+              <bucket>&quot;no&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;yes&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[usr:Calculation_445856410722172928:nk]' type='palette'>
+            <map to='#1170aa'>
+              <bucket>&quot;Profit&quot;</bucket>
+            </map>
+            <map to='#fc7d0b'>
+              <bucket>&quot;Negative Profit&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#1170aa'>
+              <bucket>&quot;[federated.13capog1j9lndx15mygvg1qxl4ma].[sum:popularity:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13capog1j9lndx15mygvg1qxl4ma].[avg:popularity:qk]&quot;</bucket>
+            </map>
+            <map to='#57606c'>
+              <bucket>&quot;[federated.13capog1j9lndx15mygvg1qxl4ma].[avg:revenue_adj:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.13capog1j9lndx15mygvg1qxl4ma]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.13capog1j9lndx15mygvg1qxl4ma].[avg:budget:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.13capog1j9lndx15mygvg1qxl4ma].[sum:budget:qk]&quot;</bucket>
+            </map>
+            <map to='#c85200'>
+              <bucket>&quot;[federated.13capog1j9lndx15mygvg1qxl4ma].[avg:profit_adj:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.13capog1j9lndx15mygvg1qxl4ma].[sum:vote_count:qk]&quot;</bucket>
+            </map>
+            <map to='#fc7d0b'>
+              <bucket>&quot;[federated.13capog1j9lndx15mygvg1qxl4ma].[avg:vote_average:qk]&quot;</bucket>
+            </map>
+            <map to='#fc7d0b'>
+              <bucket>&quot;[federated.13capog1j9lndx15mygvg1qxl4ma].[sum:vote_average:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:based_on_novel:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;no&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;yes&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.13capog1j9lndx15mygvg1qxl4ma'>
+      <datasources>
+        <datasource caption='movies' name='federated.13capog1j9lndx15mygvg1qxl4ma' />
+      </datasources>
+      <datasource-dependencies datasource='federated.13capog1j9lndx15mygvg1qxl4ma'>
+        <column caption='Based On Novel' datatype='string' name='[based_on_novel]' role='dimension' type='nominal' />
+        <column-instance column='[based_on_novel]' derivation='None' name='[none:based_on_novel:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.13capog1j9lndx15mygvg1qxl4ma].[none:based_on_novel:nk]'>
+        <groupfilter function='level-members' level='[none:based_on_novel:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        <target field='[federated.13capog1j9lndx15mygvg1qxl4ma].[none:based_on_novel:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Q3 Dashboard' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Q3 Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Q3.1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Budget</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='movies' name='federated.13capog1j9lndx15mygvg1qxl4ma' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13capog1j9lndx15mygvg1qxl4ma'>
+            <column-instance column='[budget]' derivation='Avg' name='[avg:budget:qk]' pivot='key' type='quantitative' />
+            <column caption='Based On Novel' datatype='string' name='[based_on_novel]' role='dimension' type='nominal' />
+            <column caption='Budget' datatype='integer' name='[budget]' role='measure' type='quantitative' />
+            <column-instance column='[based_on_novel]' derivation='None' name='[none:based_on_novel:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.13capog1j9lndx15mygvg1qxl4ma].[none:based_on_novel:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.13capog1j9lndx15mygvg1qxl4ma].[avg:budget:qk]' scope='rows' value='Avgerage Budget' />
+            <format attr='subtitle' class='0' field='[federated.13capog1j9lndx15mygvg1qxl4ma].[avg:budget:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.13capog1j9lndx15mygvg1qxl4ma].[avg:budget:qk]' scope='rows' value='true' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13capog1j9lndx15mygvg1qxl4ma].[none:based_on_novel:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.13capog1j9lndx15mygvg1qxl4ma].[avg:budget:qk]</rows>
+        <cols>[federated.13capog1j9lndx15mygvg1qxl4ma].[none:based_on_novel:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Q3.2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Popularity vs. Vote Average</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='movies' name='federated.13capog1j9lndx15mygvg1qxl4ma' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13capog1j9lndx15mygvg1qxl4ma'>
+            <column-instance column='[popularity]' derivation='Avg' name='[avg:popularity:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[vote_average]' derivation='Avg' name='[avg:vote_average:qk]' pivot='key' type='quantitative' />
+            <column caption='Based On Novel' datatype='string' name='[based_on_novel]' role='dimension' type='nominal' />
+            <column-instance column='[based_on_novel]' derivation='None' name='[none:based_on_novel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[original_title]' derivation='None' name='[none:original_title:nk]' pivot='key' type='nominal' />
+            <column caption='Original Title' datatype='string' name='[original_title]' role='dimension' type='nominal' />
+            <column caption='Popularity' datatype='real' name='[popularity]' role='measure' type='quantitative' />
+            <column-instance column='[popularity]' derivation='Sum' name='[sum:popularity:qk]' pivot='key' type='quantitative' />
+            <column caption='Vote Average' datatype='real' name='[vote_average]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13capog1j9lndx15mygvg1qxl4ma].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.13capog1j9lndx15mygvg1qxl4ma].[avg:popularity:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.13capog1j9lndx15mygvg1qxl4ma].[avg:vote_average:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <sort class='computed' column='[federated.13capog1j9lndx15mygvg1qxl4ma].[none:original_title:nk]' direction='DESC' using='[federated.13capog1j9lndx15mygvg1qxl4ma].[sum:popularity:qk]' />
+          <slices>
+            <column>[federated.13capog1j9lndx15mygvg1qxl4ma].[none:based_on_novel:nk]</column>
+            <column>[federated.13capog1j9lndx15mygvg1qxl4ma].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13capog1j9lndx15mygvg1qxl4ma].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.13capog1j9lndx15mygvg1qxl4ma].[Multiple Values]</rows>
+        <cols>([federated.13capog1j9lndx15mygvg1qxl4ma].[none:based_on_novel:nk] / [federated.13capog1j9lndx15mygvg1qxl4ma].[:Measure Names])</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Q3.3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Profit</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='movies' name='federated.13capog1j9lndx15mygvg1qxl4ma' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13capog1j9lndx15mygvg1qxl4ma'>
+            <column-instance column='[profit_adj]' derivation='Avg' name='[avg:profit_adj:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[revenue_adj]' derivation='Avg' name='[avg:revenue_adj:qk]' pivot='key' type='quantitative' />
+            <column caption='Based On Novel' datatype='string' name='[based_on_novel]' role='dimension' type='nominal' />
+            <column-instance column='[based_on_novel]' derivation='None' name='[none:based_on_novel:nk]' pivot='key' type='nominal' />
+            <column-instance column='[original_title]' derivation='None' name='[none:original_title:nk]' pivot='key' type='nominal' />
+            <column caption='Original Title' datatype='string' name='[original_title]' role='dimension' type='nominal' />
+            <column caption='Profit' datatype='integer' name='[profit]' role='measure' type='quantitative' />
+            <column caption='Profit Adj' datatype='real' name='[profit_adj]' role='measure' type='quantitative' />
+            <column caption='Revenue Adj' datatype='real' name='[revenue_adj]' role='measure' type='quantitative' />
+            <column-instance column='[profit]' derivation='Sum' name='[sum:profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13capog1j9lndx15mygvg1qxl4ma].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.13capog1j9lndx15mygvg1qxl4ma].[avg:profit_adj:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.13capog1j9lndx15mygvg1qxl4ma].[avg:revenue_adj:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <sort class='computed' column='[federated.13capog1j9lndx15mygvg1qxl4ma].[none:original_title:nk]' direction='DESC' using='[federated.13capog1j9lndx15mygvg1qxl4ma].[sum:profit:qk]' />
+          <slices>
+            <column>[federated.13capog1j9lndx15mygvg1qxl4ma].[none:based_on_novel:nk]</column>
+            <column>[federated.13capog1j9lndx15mygvg1qxl4ma].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13capog1j9lndx15mygvg1qxl4ma].[none:based_on_novel:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.13capog1j9lndx15mygvg1qxl4ma].[Multiple Values]</rows>
+        <cols>([federated.13capog1j9lndx15mygvg1qxl4ma].[none:based_on_novel:nk] / [federated.13capog1j9lndx15mygvg1qxl4ma].[:Measure Names])</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Q3 Dashboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='movies' name='federated.13capog1j9lndx15mygvg1qxl4ma' />
+      </datasources>
+      <datasource-dependencies datasource='federated.13capog1j9lndx15mygvg1qxl4ma'>
+        <column caption='Based On Novel' datatype='string' name='[based_on_novel]' role='dimension' type='nominal' />
+        <column-instance column='[based_on_novel]' derivation='None' name='[none:based_on_novel:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones use-insets='false'>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97298' id='16' param='horz' type='layout-flow' w='98614' x='693' y='1351'>
+            <zone h='97298' id='14' type='layout-basic' w='98614' x='693' y='1351'>
+              <zone h='97298' id='8' name='Q3.2' w='30000' x='693' y='1351'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='13007' id='10' name='Q3.2' pane-specification-id='0' param='[federated.13capog1j9lndx15mygvg1qxl4ma].[:Measure Names]' type='color' w='13333' x='85974' y='1351'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='84291' id='12' mode='checkdropdown' name='Q3.1' param='[federated.13capog1j9lndx15mygvg1qxl4ma].[none:based_on_novel:nk]' type='filter' values='relevant' w='13333' x='85974' y='14358'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='97298' id='1' name='Q3.1' w='19264' x='30693' y='1351'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='97298' id='13' name='Q3.3' w='36017' x='49957' y='1351'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Q3 Dashboard'>
+      <viewpoints>
+        <viewpoint name='Q3.1'>
+          <selection-collection>
+            <node-selection select-tuples='false'>
+              <oriented-node-reference orientation='vertical'>
+                <node-reference>
+                  <axis>[federated.13capog1j9lndx15mygvg1qxl4ma].[avg:budget:qk]</axis>
+                </node-reference>
+                <page-reference />
+              </oriented-node-reference>
+            </node-selection>
+          </selection-collection>
+        </viewpoint>
+        <viewpoint name='Q3.2'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.13capog1j9lndx15mygvg1qxl4ma].[:Measure Names]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Q3.3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+    </window>
+    <window class='worksheet' hidden='true' name='Q3.1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.13capog1j9lndx15mygvg1qxl4ma].[none:based_on_novel:nk]' type='filter' values='relevant' />
+            <card pane-specification-id='3' param='[federated.13capog1j9lndx15mygvg1qxl4ma].[none:based_on_novel:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.13capog1j9lndx15mygvg1qxl4ma].[:Measure Names]</field>
+            <field>[federated.13capog1j9lndx15mygvg1qxl4ma].[none:based_on_novel:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Q3.2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.13capog1j9lndx15mygvg1qxl4ma].[none:based_on_novel:nk]' type='filter' values='relevant' />
+            <card pane-specification-id='0' param='[federated.13capog1j9lndx15mygvg1qxl4ma].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.13capog1j9lndx15mygvg1qxl4ma].[:Measure Names]</field>
+            <field>[federated.13capog1j9lndx15mygvg1qxl4ma].[none:based_on_novel:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Q3.3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.13capog1j9lndx15mygvg1qxl4ma].[none:based_on_novel:nk]' type='filter' values='relevant' />
+            <card pane-specification-id='0' param='[federated.13capog1j9lndx15mygvg1qxl4ma].[none:based_on_novel:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.13capog1j9lndx15mygvg1qxl4ma].[none:based_on_novel:nk]</field>
+            <field>[federated.13capog1j9lndx15mygvg1qxl4ma].[usr:Calculation_445856410722172928:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Q3 Dashboard' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
