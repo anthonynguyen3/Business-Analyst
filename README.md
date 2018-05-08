@@ -16,6 +16,6 @@ This repository contains all the work for the [Udacity's Business Analyst Nanode
     + Decision tree
     + Forest model 
     + Boosted model 
-+ A/B testing for new menu lauch [Project 5](https://github.com/anthonynguyen3/udacity_business_analyst/tree/master/project5)
++ A/B testing for new menu lauch [Project 5](https://github.com/anthonynguyen3/Business-Analyst/tree/master/Project%205%20-%20AB%20Test%20a%20New%20Menu%20Launch)
 + Times series model in forecasting video game sales [Project 6](https://github.com/anthonynguyen3/udacity_business_analyst/tree/master/project6)
 + Segmentation and clustering: the use of K-mean clustering technique in segmenting [Project 7.1](https://github.com/anthonynguyen3/udacity_business_analyst/tree/master/project7)
