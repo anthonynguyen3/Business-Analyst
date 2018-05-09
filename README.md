@@ -7,13 +7,15 @@ This repository contains all the work for the [Udacity's Business Analyst Nanode
 ## [Problem Solving with Advanced Analytics](https://www.udacity.com/course/problem-solving-with-advanced-analytics--ud976)
 
 Applying a structured framework for solving problems with advanced analytics. Select the most appropriate analytical methodology. Apply linear regression.
-
 + Predict diamond prices [Project 1.1](https://github.com/anthonynguyen3/Business-Analyst/tree/master/Project%201.1%20-%20Predicting%20Diamond%20Prices)
 + Predict catalog demand [Project 1.2](https://github.com/anthonynguyen3/Business-Analyst/tree/master/Project%201.2%20-%20Predicting%20Catalog%20Demand)
     
-+ Generate an analytical dataset using Alteryx
-    + Data merging, cleansing, & identify data outliers [Project 2.1](https://github.com/anthonynguyen3/Business-Analyst/tree/master/Project%202.1%20-%20Create%20an%20Analytical%20Dataset)
-    + SQL database for creating a report [Project 2.2](https://github.com/anthonynguyen3/Business-Analyst/tree/master/Project%202.2%20-%20Create%20Reports%20from%20a%20Database)
+## [Create an Analytical Data Set](https://www.udacity.com/course/creating-an-analytical-dataset--ud977)
+
+Understand the most common data types. Understand the various sources of data. Make adjustments to dirty data to prepare a dataset. Identify and adjust for outliers. Write queries to extract and analyze data from a relational database.
++ Data merging, cleansing, & identify data outliers [Project 2.1](https://github.com/anthonynguyen3/Business-Analyst/tree/master/Project%202.1%20-%20Create%20an%20Analytical%20Dataset)
++ SQL database for creating a report [Project 2.2](https://github.com/anthonynguyen3/Business-Analyst/tree/master/Project%202.2%20-%20Create%20Reports%20from%20a%20Database)
+
 + Data visualization in Tableau: Visualize Movie Data [Project 3](https://github.com/anthonynguyen3/Business-Analyst/tree/master/Project%203%20Visualize%20Movie%20Data) 
 + Classification models in predicting default risk: [Project 4](https://github.com/anthonynguyen3/Business-Analyst/tree/master/Project%204%20-%20Predicting%20Default%20Risk)
     + Logistic regression 
