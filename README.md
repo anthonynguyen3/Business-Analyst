@@ -24,7 +24,7 @@ Understand the importance of data visualization. Know how different data types a
 ## [Classification Models](https://www.udacity.com/course/classification-models--ud978)
 
 Use classification models, such as logistic regression, decision tree, forest, and boosted, to make predictions of binary and non-binary outcomes.
-+ [Predicting Default Risk](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%204%20-%20Predicting%20Default%20Risk/Nguyen.A%20-%20Project%204%20submissiontemplate-3-1.pdf)
++ [Predicting Default Risk](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%204%20-%20Predicting%20Default%20Risk/Nguyen.A%20-%20Predicting%20Default%20Risk.pdf)
     
 ## [A/B Testing](https://www.udacity.com/course/ab-testing--ud979)
 
