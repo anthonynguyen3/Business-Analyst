@@ -34,7 +34,7 @@ Understand the fundamentals of A/B testing, including experimental design, varia
 ## [Times Series Forecasting](https://www.udacity.com/course/time-series-forecasting--ud980)
 
 Understand trend, seasonal, and cyclical behavior of time series data. Use time series decomposition plots. Build ETS and ARIMA models.
-+ [Forecasting Video Game Sales](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%206%20-%20Forecast%20Video%20Game%20Demand/Nguyen.A%20-%20Project%206%20UPDATED%20submissiontemplate.pdf)
++ [Forecasting Video Game Demand](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%206%20-%20Forecast%20Video%20Game%20Demand/Nguyen.A%20-%20Forecasting%20Video%20Game%20Demand.pdf)
 
 ## [Segmentation and Clustering](https://www.udacity.com/course/segmentation-and-clustering--ud981)
 
