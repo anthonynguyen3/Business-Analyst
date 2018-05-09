@@ -14,7 +14,7 @@ Applying a structured framework for solving problems with advanced analytics. Se
 
 Understand the most common data types. Understand the various sources of data. Make adjustments to dirty data to prepare a dataset. Identify and adjust for outliers. Write queries to extract and analyze data from a relational database.
 + [Data Merging, Cleansing, & Identify Data Outliers](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%202.1%20-%20Create%20an%20Analytical%20Dataset/NGUYEN.%20A%20-%20Create%20an%20Analytical%20Dataset.pdf)
-+ [SQL Database for Creating a Report](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%202.2%20-%20Create%20Reports%20from%20a%20Database/Nguyen%2C%20A%20-%20PROJECT%202%20SQL%20Project%20Submission%20Template.pptx)
++ [Creating a Report using SQL Database](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%202.2%20-%20Create%20Reports%20from%20a%20Database/Nguyen%2C%20A%20-%20PROJECT%202%20SQL%20Project%20Submission%20Template.pptx)
 
 ## [Data Visualization](https://www.udacity.com/course/data-visualization-in-tableau--ud1006)
 
