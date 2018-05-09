@@ -42,4 +42,4 @@ Understand the difference between localization, standardization, and segmentatio
 + [Segmentation & Clustering for International Expansion](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%207.1%20-%20Segmentation%20%26%20Clustering/Segmentation%20Project%207.1%20-%20Retail%20Store%20International%20Expansion.pdf)
 + [Combining Predictive Analytics Techniques](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%207.2%20Capstone%20-%20Combining%20Predictive%20Analytics%20Techniques/Nguyen.%20A%20Project7.2%20-%20Capstone%20Submission%20Template.pdf)
 
-!(https://confirm.udacity.com/S6CLEWSQ)
+(https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/81bdb177-8cec-45d7-a683-08efe4ce2d6b.svg)
