@@ -8,7 +8,7 @@ This repository contains all the projects for the [Udacity's Business Analyst Na
 
 Applying a structured framework for solving problems with advanced analytics. Select the most appropriate analytical methodology. Apply linear regression.
 + [Predict Diamond Prices](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%201.1%20-%20Predicting%20Diamond%20Prices/Nguyen.%20A%20Project%201%20-%20Diamond%20Prediction%20Model%20Submission.pdf)
-+ [Predict Catalog Demand](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%201.2%20-%20Predicting%20Catalog%20Demand/Nguyen.%20A%20-%20UPDATED%20Predicting%20Catalog%20Demand%20P1%20-%20Submission%20Template.pdf)
++ [Predict Catalog Demand](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%201.2%20-%20Predicting%20Catalog%20Demand/Nguyen.%20A%20-%20Predicting%20Catalog%20Demand.pdf)
     
 ## [Create an Analytical Data Set](https://www.udacity.com/course/creating-an-analytical-dataset--ud977)
 
