@@ -19,7 +19,7 @@ Understand the most common data types. Understand the various sources of data. M
 ## [Data Visualization](https://www.udacity.com/course/data-visualization-in-tableau--ud1006)
 
 Understand the importance of data visualization. Know how different data types are encoded in visualizations. Select the most effective chart or graph based on the data being displayed.
-+ [Visualizing Movie Data](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%203%20-%20Visualizing%20Movie%20Data/Nguyen.A%20-%20p3submissiontemplate.pdf) 
++ [Visualizing Movie Data](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%203%20-%20Visualizing%20Movie%20Data/Nguyen.A%20-%20Visualizing%20Movie%20Data.pdf) 
 
 ## [Classification Models](https://www.udacity.com/course/classification-models--ud978)
 
