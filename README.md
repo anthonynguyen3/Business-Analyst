@@ -29,7 +29,7 @@ Use classification models, such as logistic regression, decision tree, forest, a
 ## [A/B Testing](https://www.udacity.com/course/ab-testing--ud979)
 
 Understand the fundamentals of A/B testing, including experimental design, variable selection, and analyzing and interpreting results.
-+ [A/B Test a New Menu Launch](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%205%20-%20AB%20Test%20a%20New%20Menu%20Launch/NGUYEN.A%20-%20Project%205%20Submission%20Template.pdf)
++ [A/B Test a New Menu Launch](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%205%20-%20AB%20Test%20a%20New%20Menu%20Launch/NGUYEN.A%20-%20AB%20Test%20a%20New%20Menu%20Launch.pdf)
 
 ## [Times Series Forecasting](https://www.udacity.com/course/time-series-forecasting--ud980)
 
