@@ -1,6 +1,6 @@
 # Business Analyst Nanodegree
 
-This repository contains all the work for the [Udacity's Business Analyst Nanodegree](https://www.udacity.com/course/business-analyst-nanodegree--nd008)
+This repository contains all the projects for the [Udacity's Business Analyst Nanodegree](https://www.udacity.com/course/business-analyst-nanodegree--nd008)
 
 **PROJECT LIST**
 
