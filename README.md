@@ -2,8 +2,6 @@
 
 This repository contains all the projects for the [Udacity's Business Analyst Nanodegree](https://www.udacity.com/course/business-analyst-nanodegree--nd008)
 
-**PROJECT LIST**
-
 ## [Problem Solving with Advanced Analytics](https://www.udacity.com/course/problem-solving-with-advanced-analytics--ud976)
 
 Applying a structured framework for solving problems with advanced analytics. Select the most appropriate analytical methodology. Apply linear regression.
