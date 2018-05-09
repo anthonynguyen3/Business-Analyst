@@ -40,7 +40,7 @@ Understand trend, seasonal, and cyclical behavior of time series data. Use time 
 
 Understand the difference between localization, standardization, and segmentation. Use machine learning to create segments. Scale data to prepare a dataset for cluster modeling. Use principal components analysis (PCA) to reduce the number of variables for cluster model. Build and apply a k-centroid cluster model. Visualize and communicate the results of a cluster model. 
 + [Segmentation & Clustering for International Expansion](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%207.1%20-%20Segmentation%20%26%20Clustering/Segmentation%20Project%207.1%20-%20Retail%20Store%20International%20Expansion.pdf)
-+ [Combining Predictive Analytics Techniques](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%207.2%20Capstone%20-%20Combining%20Predictive%20Analytics%20Techniques/Nguyen.%20A%20Project7.2%20-%20Capstone%20Submission%20Template.pdf)
++ [Combining Predictive Analytics Techniques](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%207.2%20Capstone%20-%20Combining%20Predictive%20Analytics%20Techniques/Nguyen.%20A%20-%20Combining%20Predictive%20Analytics%20Techniques.pdf)
 
 ![alt text][logo]
 
