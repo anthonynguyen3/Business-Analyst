@@ -1,4 +1,4 @@
-# Business Analyst
+# Business Analytics
 
 
 ## [Problem Solving with Advanced Analytics](https://www.udacity.com/course/problem-solving-with-advanced-analytics--ud976)
