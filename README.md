@@ -1,9 +1,9 @@
 # Business Analytics
 
 
-## [Problem Solving with Advanced Analytics](https://www.udacity.com/course/problem-solving-with-advanced-analytics--ud976)
+## [Problem Solving with Advanced Analytics]
 
-Applying a structured framework for solving problems with advanced analytics. Select the most appropriate analytical methodology. Apply linear regression.
+Applying a structured framework for solving problems with advanced analytics. Select the most appropriate analytical methodology. Apply linear regression to generate business insights.
 + [Predict Diamond Prices](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%201.1%20-%20Predicting%20Diamond%20Prices/Project%201.1%20-%20Predicting%20Diamond%20Prices%20Model%20Report.pdf)
 + [Predict Catalog Demand](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%201.2%20-%20Predicting%20Catalog%20Demand/Nguyen.%20A%20-%20Predicting%20Catalog%20Demand.pdf)
     
