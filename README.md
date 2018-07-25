@@ -28,7 +28,7 @@ Use classification models, such as logistic regression, decision tree, forest, a
 Create business insights and support decision making through design and analysis of A/B Testing including experimental design, variable selection, and analyzing and interpreting results.
 + [A/B Test a New Menu Launch](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%205%20-%20AB%20Test%20a%20New%20Menu%20Launch/NGUYEN.A%20-%20AB%20Test%20a%20New%20Menu%20Launch.pdf)
 
-## [Times Series Forecasting](https://www.udacity.com/course/time-series-forecasting--ud980)
+## Times Series Forecasting
 
 Understand trend, seasonal, and cyclical behavior of time series data. Use time series decomposition plots. Build ETS and ARIMA models.
 + [Forecasting Video Game Demand](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%206%20-%20Forecast%20Video%20Game%20Demand/Nguyen.A%20-%20Forecasting%20Video%20Game%20Demand.pdf)
