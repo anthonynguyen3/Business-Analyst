@@ -23,9 +23,9 @@ Communicating a story through data with data visualization techniques. How diffe
 Use classification models, such as logistic regression, decision tree, forest, and boosted, to make predictions of business insights.
 + [Predicting Default Risk](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%204%20-%20Predicting%20Default%20Risk/Nguyen.A%20-%20Predicting%20Default%20Risk.pdf)
     
-## [A/B Testing](https://www.udacity.com/course/ab-testing--ud979)
+## A/B Testing
 
-Understand the fundamentals of A/B testing, including experimental design, variable selection, and analyzing and interpreting results.
+Create business insights and support decision making through design and analysis of A/B Testing including experimental design, variable selection, and analyzing and interpreting results.
 + [A/B Test a New Menu Launch](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%205%20-%20AB%20Test%20a%20New%20Menu%20Launch/NGUYEN.A%20-%20AB%20Test%20a%20New%20Menu%20Launch.pdf)
 
 ## [Times Series Forecasting](https://www.udacity.com/course/time-series-forecasting--ud980)
