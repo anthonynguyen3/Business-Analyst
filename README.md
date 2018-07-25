@@ -18,9 +18,9 @@ Using advanced techniques to input, clean, blend, and format data in preparation
 Communicating a story through data with data visualization techniques. How different data types are encoded in visualizations and select the most effective chart or graph based on the data being displayed.
 + [Visualizing Movie Data](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%203%20-%20Visualizing%20Movie%20Data/Nguyen.A%20-%20Visualizing%20Movie%20Data.pdf) 
 
-## [Classification Models](https://www.udacity.com/course/classification-models--ud978)
+## Classification Models
 
-Use classification models, such as logistic regression, decision tree, forest, and boosted, to make predictions of binary and non-binary outcomes.
+Use classification models, such as logistic regression, decision tree, forest, and boosted, to make predictions of business insights.
 + [Predicting Default Risk](https://github.com/anthonynguyen3/Business-Analyst/blob/master/Project%204%20-%20Predicting%20Default%20Risk/Nguyen.A%20-%20Predicting%20Default%20Risk.pdf)
     
 ## [A/B Testing](https://www.udacity.com/course/ab-testing--ud979)
