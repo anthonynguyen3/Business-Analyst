@@ -1,4 +1,4 @@
-# Business Analytics
+# Predictive Analytics for Business
 
 
 ## Problem Solving with Advanced Analytics
